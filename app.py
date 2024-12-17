@@ -20,7 +20,7 @@ def perceptron(data, theta, n, real_y):
     return theta, b
 
 # Load dataset and preprocess for CKD prediction
-dataset = pd.read_csv(r"C:\Users\jagri\OneDrive\문서\datasetperceptron.csv")
+dataset = pd.read_csv("data/datasetperceptron.csv")
 x = dataset.iloc[:, [10, 11, 12, 20]].values
 y = dataset.iloc[:, 25].values
 n = len(y)
